@@ -5,7 +5,7 @@ function CustomerList() {
   const customerList = getCustomersApiCall();
   return (
     <main>
-      <h2>Lista klientow</h2>
+      <h2>Lista klientów</h2>
       <table className="table-list">
         <thead>
           <tr>
@@ -34,7 +34,7 @@ function CustomerList() {
                 <ul className="list-actions">
                   <li>
                     <Link
-                      to={`customer/details/${customer._id}`}
+                      to={`/customer/details/${customer._id}`}
                       className="list-actions-button-details"
                     >
                       Szczegóły
@@ -42,7 +42,7 @@ function CustomerList() {
                   </li>
                   <li>
                     <Link
-                      to={`customer/edit/${customer._id}`}
+                      to={`/customer/edit/${customer._id}`}
                       className="list-actions-button-edit"
                     >
                       Edytuj
@@ -50,7 +50,7 @@ function CustomerList() {
                   </li>
                   <li>
                     <Link
-                      to={`customer/delete/${customer._id}`}
+                      to={`/customer/delete/${customer._id}`}
                       className="list-actions-button-delete"
                       onclick="return confirm('Czy na pewno chcesz usunąć tego klienta?');"
                     >
@@ -64,7 +64,7 @@ function CustomerList() {
         </tbody>
       </table>
       <p>
-        <Link to={`customer/add`} className="button-add">
+        <Link to={`/customer/add`} className="button-add">
           Dodaj nowego klienta
         </Link>
       </p>

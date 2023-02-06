@@ -30,9 +30,18 @@ export const customerDetailsList = [
     phoneNumber: "111-222-333",
     companyName: "Microsoft",
     nip: "1234567890",
-    reservation: [
+    reservations: [
       {
         _id: 1,
+        dateFrom: "2022-01-01",
+        dateTo: "2023-01-01",
+        customer_id: 1,
+        car_id: 1,
+        car: {
+          _id: 1,
+          brandName: "Ford",
+          model: "Focus",
+        },
       },
     ],
   },

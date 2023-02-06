@@ -17,7 +17,7 @@ function CustomerDetails() {
       <p>Numer telefonu: {customer.phoneNumber}</p>
       <p>Firma: {customer.companyName}</p>
       <p>NIP: {customer.nip}</p>
-      <h2>Szczególy rezerwacji</h2>
+      <h2>Szczegóły rezerwacji</h2>
       <table className="table-list">
         <thead>
           <tr>
@@ -27,10 +27,10 @@ function CustomerDetails() {
           </tr>
         </thead>
         <tbody>
-          {customer.reservation.map((reservation) => (
+          {customer.reservations.map((reservation) => (
             <tr key={reservation._id}>
               <td>
-                {reservation.car.brandName} + ' ' + {reservation.car.model}
+                {reservation.car.brandName} {reservation.car.model}
               </td>
               <td>
                 {reservation.dateFrom
