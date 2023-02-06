@@ -20,7 +20,7 @@ export const customerList = [
   },
 ];
 
-export const customerDetailsList = [
+export const customerDetails = [
   {
     _id: 1,
     firstName: "Jan",
@@ -33,10 +33,10 @@ export const customerDetailsList = [
     reservations: [
       {
         _id: 1,
-        dateFrom: "2022-01-01",
-        dateTo: "2023-01-01",
         customer_id: 1,
         car_id: 1,
+        dateFrom: "2022-01-01",
+        dateTo: "2023-01-01",
         car: {
           _id: 1,
           brandName: "Ford",
