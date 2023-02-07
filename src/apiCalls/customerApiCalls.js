@@ -1,11 +1,11 @@
-import { customerList, customerDetails } from "./customerApiMockData";
+import { customerList, customerDetailsList } from "./customerApiMockData";
 
 export function getCustomersApiCall() {
   return customerList;
 }
 
-export function getCustomerByIdApicall(customerId) {
-  const customer = customerDetails.find(
+export function getCustomerByIdApiCall(customerId) {
+  const customer = customerDetailsList.find(
     (customer) => customer._id === customerId
   );
   return customer;

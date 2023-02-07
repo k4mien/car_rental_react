@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import { getCarsApiCall } from "../../apiCalls/carApiCalls";
 
 function CarList() {
+  const carList = getCarsApiCall();
   return (
     <main>
       <h2>Lista samochodów</h2>

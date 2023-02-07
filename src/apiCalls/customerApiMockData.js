@@ -4,7 +4,7 @@ export const customerList = [
     firstName: "Jan",
     lastName: "Kowalski",
     pesel: "00111222333",
-    email: "kowal@mail.com",
+    email: "kowal@carmex.com",
     phoneNumber: "111-222-333",
     companyName: "Microsoft",
     nip: "1234567890",
@@ -15,12 +15,21 @@ export const customerList = [
     firstName: "Michał",
     lastName: "Karmowski",
     pesel: "00222333444",
-    email: "karmowski@mail.com",
+    email: "karmowski@carmex.com",
+    phoneNumber: "211-521-370",
+  },
+
+  {
+    _id: 3,
+    firstName: "Dawid",
+    lastName: "Kubacki",
+    pesel: "99242099131",
+    email: "d.kubacki@carmex.com",
     phoneNumber: "222-333-444",
   },
 ];
 
-export const customerDetails = [
+export const customerDetailsList = [
   {
     _id: 1,
     firstName: "Jan",
@@ -41,8 +50,48 @@ export const customerDetails = [
           _id: 1,
           brandName: "Ford",
           model: "Focus",
+          registration: "WF-11122",
+          insurance: "1",
+          inspection: "1",
+          description: "Nowy, automatyczna skrzynia biegów, full wyposażenie",
         },
       },
     ],
+  },
+
+  {
+    _id: 2,
+    firstName: "Michał",
+    lastName: "Karmowski",
+    pesel: "00222333444",
+    email: "karmowski@carmex.com",
+    phoneNumber: "211-521-370",
+    reservations: [
+      {
+        _id: 2,
+        customer_id: 2,
+        car_id: 2,
+        dateFrom: "2023-01-01",
+        dateTo: "2024-11-01",
+        car: {
+          _id: 2,
+          brandName: "Toyota",
+          model: "Yaris",
+          registration: "WF-22211",
+          insurance: "1",
+          inspection: "1",
+        },
+      },
+    ],
+  },
+
+  {
+    _id: 3,
+    firstName: "Dawid",
+    lastName: "Kubacki",
+    pesel: "99242099131",
+    email: "d.kubacki@carmex.com",
+    phoneNumber: "222-333-444",
+    reservations: [],
   },
 ];

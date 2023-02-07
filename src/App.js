@@ -5,10 +5,10 @@ import MainContent from "./components/other/MainContent";
 import CustomerList from "./components/customer/CustomerList";
 import CustomerDetails from "./components/customer/CustomerDetails";
 import CustomerForm from "./components/customer/CustomerForm";
+import CarList from "./components/car/CarList";
+import CarForm from "./components/car/CarForm";
 
 function App() {
-  var cors = require("cors");
-  App.use(cors());
   return (
     <>
       <Header />
@@ -20,6 +20,12 @@ function App() {
           <Route path="details/:customerId" element={<CustomerDetails />} />
           <Route path="add" element={<CustomerForm />} />
           <Route path="edit/:customerId" element={<CustomerForm />} />
+        </Route>
+
+        <Route path="car">
+          <Route index={true} element={<CarList />} />
+          <Route path="add" element={<CarForm />} />
+          <Route path="edit/:customerId" element={<CarForm />} />
         </Route>
       </Routes>
       <Footer />

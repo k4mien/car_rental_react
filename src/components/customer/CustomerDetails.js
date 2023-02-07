@@ -1,12 +1,12 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
-import { getCustomerByIdApicall } from "../../apiCalls/customerApiCalls";
+import { getCustomerByIdApiCall } from "../../apiCalls/customerApiCalls";
 import { getFormattedDate } from "../../helpers/dateHelper";
 
 function CustomerDetails() {
   let { customerId } = useParams();
   customerId = parseInt(customerId);
-  const customer = getCustomerByIdApicall(customerId);
+  const customer = getCustomerByIdApiCall(customerId);
   return (
     <main>
       <h2>Szczegóły klienta</h2>

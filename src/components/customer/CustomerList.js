@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import { getCustomersApiCall } from "../../apiCalls/customerApiCalls";
 
 function CustomerList() {
+  const customerList = getCustomersApiCall();
   return (
     <main>
       <h2>Lista klientów</h2>

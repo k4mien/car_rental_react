@@ -1,14 +1,18 @@
 html {
     background-color: #F7F8FF;
-    font-family: sans-serif;
+    font-family: 'Inter';
 }
 
 body {
     min-width: 360px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 header,
 main,
+nav,
 footer {
     margin: 1rem;
 }
@@ -41,13 +45,13 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #407daf;
+    background-color: #af7cc1;
     border-radius: 20px;
     color: #ecf0f1;
 }
 
 nav ul li a.active {
-    background-color: #5d89ad;
+    background-color: #b083c0;
     border-radius: 20px;
     color:#ecf0f1;
 }
@@ -61,7 +65,7 @@ footer {
 }
 
 main h2 {
-    border-bottom: 1px solid #7f8c8d;
+    border-bottom: 1px solid #af7cc1;
     margin-bottom: 2rem;
 }
 
@@ -84,7 +88,7 @@ main h2 {
 
 .table-list th,
 .table-list tbody tr:nth-child(even) {
-    background-color: #4b82b9a8;
+    background-color: #2f2f2f1c;
 }
 
 .list-actions {
